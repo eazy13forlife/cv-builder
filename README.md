@@ -12,8 +12,8 @@ A fully responsive application that allows users to create their own resume usin
 * Flexbox
 
 ## What I wanted to learn
-This was achieved without any form library. It was all done using react hooks.
+This was achieved without any react form library. It was all done using react hooks.
 
 ## Future Implementations
-* User can download PDF version of resume
+User can download PDF version of resume
 
