@@ -1,0 +1,38 @@
+@keyframes sliderMoveForward {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 90%;
+  }
+}
+
+@keyframes sliderMoveBackward {
+  0% {
+    top: 0;
+    left: 90%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes fillForward {
+  0% {
+    background-color: var(--tertiary-color-white);
+  }
+  100% {
+    background-color: var(--secondary-color-purple);
+  }
+}
+@keyframes fillBackward {
+  0% {
+    background-color: var(--secondary-color-purple);
+  }
+  100% {
+    background-color: var(--tertiary-color-white);
+  }
+}

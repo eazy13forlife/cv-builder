@@ -1,5 +1,8 @@
 html {
   font-size: 62.5%;
+  @include respondMax(800px) {
+    font-size: 55%;
+  }
 }
 
 *,
@@ -9,32 +12,23 @@ html {
   padding: 0px;
   box-sizing: inherit;
 }
+:root {
+  //colors
+  --primary-color-blue: #63afc0;
+  --primary-color-blue-light: #c0ebf4;
+
+  --secondary-color-purple: #422196;
+  --primary-color-purple-light: #aad6ff;
+
+  --tertiary-color-white: white;
+
+  --phone: 600px;
+}
 
 body {
-  min-height: 100vh;
-  line-height: 1.5;
+  font-size: 1.6rem;
   box-sizing: border-box;
-  font-size: 1.4rem;
-}
-
-img {
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  background-color: var(--primary-color-blue);
 }
