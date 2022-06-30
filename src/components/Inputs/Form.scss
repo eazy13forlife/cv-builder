@@ -1,0 +1,103 @@
+@use "../../styles/abstracts";
+
+.Form {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @include abstracts.respondMax(630px) {
+      flex-wrap: wrap;
+    }
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+      @include abstracts.respondMax(630px) {
+        margin-bottom: 0rem;
+      }
+    }
+  }
+  &__column {
+    flex-basis: 46%;
+    @include abstracts.respondMax(630px) {
+      flex-basis: 100%;
+      margin-bottom: 3rem;
+    }
+    &--space-between {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__column-full {
+    flex-basis: 100%;
+    @include abstracts.respondMax(630px) {
+      margin-bottom: 3rem;
+    }
+  }
+  &__input {
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--secondary-color-purple);
+    border-radius: 0.5rem;
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    &:focus {
+      outline: none;
+    }
+  }
+  &__text-area {
+    resize: none;
+  }
+  &__small-group {
+    flex-basis: 25%;
+    position: relative;
+    .slider {
+      position: relative;
+      top: 1rem;
+      left: 0;
+    }
+  }
+  &__medium-group {
+    flex-basis: 62.5%;
+    position: relative;
+  }
+  &__group {
+    position: relative;
+    @include abstracts.respondMax(630px) {
+      flex-basis: 100%;
+    }
+  }
+  &__label {
+    text-transform: capitalize;
+    color: var(--secondary-color-purple);
+    font-weight: 500;
+
+    white-space: nowrap;
+  }
+  &__remove-button {
+    position: absolute;
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+    }
+    &--education {
+      top: 85%;
+      @include abstracts.respondMax(700px) {
+        top: 92%;
+        right: 2rem;
+      }
+    }
+    &--work-experience {
+      top: 90%;
+      @include abstracts.respondMax(700px) {
+        top: 93%;
+        right: 2rem;
+      }
+    }
+  }
+  &__error {
+    width: 100%;
+    position: absolute;
+    color: red;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}

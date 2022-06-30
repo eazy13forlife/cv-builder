@@ -7,8 +7,6 @@ import WorkExperience from "../WorkExperience/WorkExperience.js";
 import CreatePdf from "../CreatePdf/CreatePdf.js";
 import ExamplePdf from "../ExamplePdf/ExamplePdf.js";
 
-import "./App.scss";
-
 import {
   changeInfoFirstLevel,
   changeInfoSecondLevel,

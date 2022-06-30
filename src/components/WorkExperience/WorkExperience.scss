@@ -1,0 +1,15 @@
+@use "../../styles/abstracts";
+
+.WorkExperience {
+  margin-top: 3rem;
+  .container--workExperience {
+    background-color: var(--primary-color-purple-light);
+  }
+  button {
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+    @include abstracts.respondMax(900px) {
+      margin-left: 5rem;
+    }
+  }
+}

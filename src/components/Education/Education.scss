@@ -1,11 +1,10 @@
 @use "../../styles/abstracts";
 
-.CreatePdf {
-  margin-top: 3rem;
-  padding-bottom: 5rem;
-
+.Education {
+  margin-top: -2rem;
   button {
-    margin: 4rem 0 3rem 10rem;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
     @include abstracts.respondMax(900px) {
       margin-left: 5rem;
     }

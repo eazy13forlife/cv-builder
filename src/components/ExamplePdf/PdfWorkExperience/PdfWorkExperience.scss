@@ -1,0 +1,10 @@
+.PdfWorkExperience {
+  margin-top: 5rem;
+  .Pdf__sub-title {
+    margin-left: 1rem;
+  }
+  &__description {
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+}

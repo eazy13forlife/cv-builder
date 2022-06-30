@@ -1,17 +1,19 @@
+@use "../abstracts";
+
 .container {
   margin: 4rem 10rem;
   padding: 4rem;
   border-radius: 1rem;
   position: relative;
-  @include respondMax(900px) {
+  @include abstracts.respondMax(900px) {
     margin: 4rem 5rem;
   }
-  @include respondMax(750px) {
+  @include abstracts.respondMax(750px) {
     margin: 4rem 2rem;
     padding: 4rem 2rem;
   }
 
-  @include respondMax(600px) {
+  @include abstracts.respondMax(600px) {
     margin: 4rem 0rem;
     padding: 3.5rem;
     border-radius: 0;

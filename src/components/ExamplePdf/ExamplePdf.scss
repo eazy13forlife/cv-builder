@@ -1,0 +1,55 @@
+.Pdf {
+  width: 800px;
+  background-color: white;
+  margin: auto;
+  min-height: 100vh;
+  padding: 32px 40px;
+  position: relative;
+  button {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.6rem;
+    right: 1rem;
+  }
+  &__space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__flex {
+    display: flex;
+  }
+  &__personal-info {
+    display: flex;
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    justify-content: center;
+    & > *:not(:first-child) {
+      border-left: 1px solid black;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  &__address {
+    display: flex;
+    padding-right: 10px;
+  }
+  &__listing {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  &__dates {
+    font-weight: 800;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 19px;
+  }
+  &__sub-title {
+    font-weight: 500;
+    font-size: 17px;
+    font-style: italic;
+  }
+}
